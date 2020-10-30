@@ -1,0 +1,6 @@
+Part 2.1:
+David W. A+
+
+Part 2.2:
+STUDENT_NAME_LEN:   .word   0x14         # Length of STUDENT_NAME in bytes
+STUDENT_NAME:       .ascii "David Wade\x00\x00\xd4\x00\x00\x00\xfc\x00\x00\x00"

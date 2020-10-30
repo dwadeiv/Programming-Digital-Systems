@@ -1,0 +1,21 @@
+Problem 2.1	
+	
+	int main(){
+	    int X[6] = {5, 3, -6, 19, 8, 12};
+	    int Y[6] = {0, 0 ,0 ,0 ,0 ,0, 0};
+
+	    for(int N = 6; N > 0; N--){
+		Y[N] = X[N];
+	    }
+	}
+
+The assembly code creates two arrays, one named X filled with various numbers, and another named Y of the same size filled with zeroes. Another variable N is assigned to the number 6, which is also the size of the arrays. Array X is stored in register 2, array Y is stored in register 3, and N is stored into register 4. Then starting with the first address of each array, the value of the current position X is loaded into register 6, which then is stored from register 6 into register 3, or in other words Y. Then the address is moved over to the next index of each array and N is decremeneted by 1. This process will loop until the value of N is greater than the value of zero. In short, this is NIOS II assembly's version of a for loop that copies one array of values into another. 
+
+
+Problem 2.2
+
+	stw r4, -28(r19)
+
+Problem 2.3
+
+	0x2D9D203A
